@@ -18,3 +18,95 @@ section {
 #gallery .row > * {
   padding: 0;
 }
+
+/* My Coding Section */
+.coding-box {
+  position: relative;
+  background-color: #212529;
+  border-radius: 10px;
+  height: 500px;
+  transform: preserve-3d;
+}
+
+.coding-box::before {
+  content: 'LAWLESS';
+  position: absolute;
+  color: #fff;
+  font-size: 3em;
+  font-weight: bold;
+  font-style: italic;
+  top: 60px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.coding-box:hover::before {
+  opacity: 0.2;
+}
+
+.coding-box::after {
+  content: 'BURGERBAR';
+  position: absolute;
+  color: #fff;
+  font-size: 3em;
+  font-weight: bold;
+  font-style: italic;
+  top: 370px;
+  left: 50%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.coding-box:hover::after {
+  opacity: 0.2;
+}
+
+.coding-name {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  font-size: 2em;
+  opacity: 0;
+  transform: translate3d(0, 0, 50px);
+  transition: 0.5s;
+}
+
+.coding-box:hover .coding-name {
+  top: 20px;
+  opacity: 1;
+}
+
+.coding-detail-button {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate3d(-50%, 0, 100px);
+  opacity: 0;
+  transition: 0.5s;
+  z-index: 3;
+}
+
+.coding-box:hover .coding-detail-button {
+  opacity: 1;
+  bottom: 20px;
+}
+
+.burger-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 80px);
+  max-width: 300px;
+  transition: 0.5s;
+  z-index: 10;
+}
+
+.coding-box:hover .burger-img {
+  transform: translate3d(-50%, -50%, 100px) rotate(-5deg) scale(1.2);
+}

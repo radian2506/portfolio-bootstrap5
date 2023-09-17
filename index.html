@@ -136,6 +136,40 @@
           </div>
         </div>
       </div>
+
+      <section id="my-coding">
+        <div class="container">
+          <div class="row text-center mb-3">
+            <div class="col">
+              <h2>My Work</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 col-lg-4 mb-3">
+              <div class="coding-box">
+                <h4 class="coding-name text-white">Sabbath Double</h4>
+                <img src="img/coding/1.png" alt="Lawless Burgerbar" class="burger-img" />
+                <a href="#" class="btn btn-light coding-detail-button">Show Detail</a>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-3">
+              <div class="coding-box">
+                <h4 class="coding-name text-white">Visual Studio Code</h4>
+                <img src="img/coding/2.png" alt="Visual Studio Code" class="burger-img" />
+                <a href="#" class="btn btn-light coding-detail-button">Show Detail</a>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-3">
+              <div class="coding-box">
+                <h4 class="coding-name text-white">Coding Work</h4>
+                <img src="img/coding/3.png" alt="Coding Work" class="burger-img" />
+                <a href="#" class="btn btn-light coding-detail-button">Show Detail</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#fff"
@@ -320,6 +354,14 @@
             console.log('Success!', response);
           })
           .catch((error) => console.error('Error!', error.message));
+      });
+    </script>
+
+    <script type="text/javascript" src="js/vanilla-tilt.min.js"></script>
+    <script type="text/javascript">
+      VanillaTilt.init(document.querySelectorAll('.coding-box'), {
+        max: 25,
+        speed: 400,
       });
     </script>
   </body>
